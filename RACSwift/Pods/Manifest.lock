@@ -1,20 +1,32 @@
 PODS:
   - CYLTabBarController (1.17.22)
+  - ReactiveCocoa (8.0.2):
+    - ReactiveSwift (~> 4.0)
+  - ReactiveSwift (4.0.0):
+    - Result (~> 4.0)
+  - Result (4.1.0)
   - SnapKit (4.0.1)
 
 DEPENDENCIES:
   - CYLTabBarController (~> 1.17.22)
+  - ReactiveCocoa (~> 8.0.2)
   - SnapKit (~> 4.0.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs:
     - CYLTabBarController
+    - ReactiveCocoa
+    - ReactiveSwift
+    - Result
     - SnapKit
 
 SPEC CHECKSUMS:
   CYLTabBarController: 35784c2969383583d11cc56ff5abce078f19d94a
+  ReactiveCocoa: fbd26e9ba60e98417ee47433e59465a98ed9da0f
+  ReactiveSwift: a2bb9ace428a109e9c0209615645d9d286c8c433
+  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
   SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
 
-PODFILE CHECKSUM: 76708e6a6193a5d82a7b7c89babb74109f1c7d5d
+PODFILE CHECKSUM: 30a99e3c56379edaeb5d545db21543b77c974775
 
 COCOAPODS: 1.5.3
