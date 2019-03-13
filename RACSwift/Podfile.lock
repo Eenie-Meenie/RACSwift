@@ -1,0 +1,20 @@
+PODS:
+  - CYLTabBarController (1.17.22)
+  - SnapKit (4.0.1)
+
+DEPENDENCIES:
+  - CYLTabBarController (~> 1.17.22)
+  - SnapKit (~> 4.0.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs:
+    - CYLTabBarController
+    - SnapKit
+
+SPEC CHECKSUMS:
+  CYLTabBarController: 35784c2969383583d11cc56ff5abce078f19d94a
+  SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
+
+PODFILE CHECKSUM: 76708e6a6193a5d82a7b7c89babb74109f1c7d5d
+
+COCOAPODS: 1.5.3
