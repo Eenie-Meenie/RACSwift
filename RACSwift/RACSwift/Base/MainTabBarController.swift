@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import ReactiveCocoa
+import ReactiveSwift
+import Result
 
 class MainTabBarController: CYLTabBarController {
     
@@ -31,10 +34,10 @@ class MainTabBarController: CYLTabBarController {
         
         let tabBarItemsAttributes = [tabBarItemOne,tabBarItemTwo,tabBarItemThree,tabBarItemFour]
         
-        let home = UINavigationController(rootViewController: HomeViewController())
-        let connection = UINavigationController(rootViewController: AddressBookViewController())
-        let message = UINavigationController(rootViewController: MessageViewController())
-        let personal =   UINavigationController(rootViewController: MineViewController())
+        let home = MainNavigationViewController(rootViewController: HomeViewController())
+        let connection = MainNavigationViewController(rootViewController: AddressBookViewController())
+        let message = MainNavigationViewController(rootViewController: MessageViewController())
+        let personal =   MainNavigationViewController(rootViewController: MineViewController())
         let viewControllers = [home, connection, message, personal]
         
         let tabBarVC = MainTabBarController.init(viewControllers: viewControllers, tabBarItemsAttributes: tabBarItemsAttributes)
