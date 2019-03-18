@@ -21,6 +21,7 @@
 		53835D972238EBEF0094560D /* PublishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53835D962238EBEF0094560D /* PublishViewController.swift */; };
 		53DD487F223F4656004CCFB5 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DD487E223F4656004CCFB5 /* SecondViewController.swift */; };
 		53DD4881223F4C30004CCFB5 /* MainNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DD4880223F4C30004CCFB5 /* MainNavigationViewController.swift */; };
+		53DD4883223F6E2E004CCFB5 /* BaseNoticeConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DD4882223F6E2E004CCFB5 /* BaseNoticeConfig.swift */; };
 		E994DE9D000A409E4F0309D0 /* Pods_RACSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA6E2C48EFED8D51D6098641 /* Pods_RACSwift.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +64,7 @@
 		53835D962238EBEF0094560D /* PublishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishViewController.swift; sourceTree = "<group>"; };
 		53DD487E223F4656004CCFB5 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		53DD4880223F4C30004CCFB5 /* MainNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationViewController.swift; sourceTree = "<group>"; };
+		53DD4882223F6E2E004CCFB5 /* BaseNoticeConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNoticeConfig.swift; sourceTree = "<group>"; };
 		87A95CEE273E8F57C6DB1E6E /* Pods-RACSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RACSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RACSwift/Pods-RACSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		CA6E2C48EFED8D51D6098641 /* Pods_RACSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RACSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9D5C0FE16131F81BB573BF2 /* Pods-RACSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RACSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-RACSwift/Pods-RACSwift.release.xcconfig"; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				53835D5F2238CEE80094560D /* Info.plist */,
+				53DD4882223F6E2E004CCFB5 /* BaseNoticeConfig.swift */,
 				53835D5C2238CEE80094560D /* LaunchScreen.storyboard */,
 				53835D5A2238CEE80094560D /* Assets.xcassets */,
 				53835D862238D9210094560D /* RACSwiftBridge-Header.h */,
@@ -425,6 +428,7 @@
 			files = (
 				53835D542238CEE60094560D /* AppDelegate.swift in Sources */,
 				53835D822238D1890094560D /* HomeViewController.swift in Sources */,
+				53DD4883223F6E2E004CCFB5 /* BaseNoticeConfig.swift in Sources */,
 				53835D8E2238E2CC0094560D /* AddressBookViewController.swift in Sources */,
 				53DD487F223F4656004CCFB5 /* SecondViewController.swift in Sources */,
 				53835D842238D6470094560D /* MainTabBarController.swift in Sources */,

@@ -23,33 +23,12 @@ class HomeViewController: UIViewController {
         configureNavigationBar()
         // 创建热信号
         createrHotSignal()
-        
-        // KVO 对于NSObject的子类可以直接使用, 对于Swift的原生类需要加上dynamic修饰.
-        reactive.signal(forKeyPath: "someValue").observeValues { [weak self] (value) in
-            
-            guard let value = value else {return}
-            
-            print("someValue: \(value)")
-        }
+        createrKVO()
+        // 通知
+        createrNotification()
         
         someValue = 1
     }
-    
-    // 创建子View
-    func createrSubViews() {
-        view.backgroundColor = UIColor.red
-        view.addSubview(button)
-        button.snp.makeConstraints { (make) in
-            make.center.equalToSuperview()
-            make.width.equalTo(100)
-            make.height.equalTo(50)
-        }
-    }
-    
-    func configureNavigationBar() {
-       navigationItem.title = "首页"
-    }
-
     
     // MARK - lazy load
     /// 跳转按钮
@@ -114,5 +93,39 @@ extension HomeViewController {
 
         observeB.send(value: "2")
         observeB.sendCompleted()
+    }
+    
+    /// KVO
+    func createrKVO() {
+        // KVO 对于NSObject的子类可以直接使用, 对于Swift的原生类需要加上dynamic修饰.
+        reactive.signal(forKeyPath: "someValue").observeValues { [weak self] (value) in
+            guard let value = value else {return}
+            print("someValue: \(value)")
+        }
+    }
+    
+    
+    // 注册通知
+    func createrNotification() {
+        NotificationCenter.default.reactive.notifications(forName: RacNotificationName, object: nil).observeValues { (value) in
+
+            guard let object = value.object else {return}
+            print("notifation: \(object)")
+        }
+    }
+    
+    // 创建子View
+    func createrSubViews() {
+        view.backgroundColor = UIColor.red
+        view.addSubview(button)
+        button.snp.makeConstraints { (make) in
+            make.center.equalToSuperview()
+            make.width.equalTo(100)
+            make.height.equalTo(50)
+        }
+    }
+    
+    func configureNavigationBar() {
+        navigationItem.title = "首页"
     }
 }

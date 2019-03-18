@@ -28,16 +28,43 @@ class SecondViewController: UIViewController {
 
         createrSubViews()
         configureNavigationBar()
+        
+        
+        
         // Do any additional setup after loading the view.
     }
     
     // 创建子View
     func createrSubViews() {
         view.backgroundColor = UIColor.cyan
+        
+        view.addSubview(button)
+        button.snp.makeConstraints { (make) in
+            make.center.equalToSuperview()
+            make.width.equalTo(100)
+            make.height.equalTo(50)
+        }
     }
     
     func configureNavigationBar() {
         navigationItem.title = "第二页"
     }
+    
+    /// 跳转按钮
+    lazy var button: UIButton = {
+        let button = UIButton.init(type: .custom)
+        button.setTitle("通知", for: .normal)
+        button.backgroundColor = UIColor.white
+        button.titleLabel?.font = UIFont.systemFont(ofSize: 15)
+        button.setTitleColor(UIColor.darkText, for: .normal)
+        button.layer.cornerRadius = 5
+        button.layer.borderWidth = 1
+        button.layer.borderColor = UIColor.lightGray.cgColor
+        button.reactive.controlEvents(.touchUpInside).observeValues({ [weak self] (button)  in
+            NotificationCenter.default.post(name: RacNotificationName, object: "abc")
+        })
+        return button
+    }()
+    
 
 }

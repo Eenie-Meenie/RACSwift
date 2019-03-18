@@ -17,7 +17,6 @@ class AddressBookViewController: UIViewController {
         return tableView
     }()
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
         createrSubViews()
