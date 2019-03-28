@@ -7,12 +7,12 @@
 //
 
 import UIKit
-import ReactiveSwift
-import ReactiveCocoa
-import Result
-import enum Result.NoError
+@_exported import ReactiveSwift
+@_exported import ReactiveCocoa
+@_exported import Result
+@_exported import enum Result.NoError
 
-class HomeViewController: UIViewController {
+class HomeViewController: BaseViewController {
     
     @objc dynamic var someValue = 0
 

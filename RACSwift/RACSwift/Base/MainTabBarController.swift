@@ -7,9 +7,6 @@
 //
 
 import UIKit
-import ReactiveCocoa
-import ReactiveSwift
-import Result
 
 class MainTabBarController: CYLTabBarController {
     
@@ -20,7 +17,7 @@ class MainTabBarController: CYLTabBarController {
                              CYLTabBarItemImage:"home_normal",
                              CYLTabBarItemSelectedImage:"home_highlight"]
         
-        let tabBarItemTwo = [CYLTabBarItemTitle:"同城",
+        let tabBarItemTwo = [CYLTabBarItemTitle:"地址",
                              CYLTabBarItemImage:"mycity_normal",
                              CYLTabBarItemSelectedImage:"mycity_highlight"]
         

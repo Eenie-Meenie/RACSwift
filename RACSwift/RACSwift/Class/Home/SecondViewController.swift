@@ -7,13 +7,8 @@
 //
 
 import UIKit
-import ReactiveSwift
-import ReactiveCocoa
-import Result
-import enum Result.NoError
 
-
-class SecondViewController: UIViewController {
+class SecondViewController: BaseViewController {
     
     // 代理信号
     let (signalDelegate, observeDelegate) = Signal<String,NoError>.pipe()
@@ -21,6 +16,8 @@ class SecondViewController: UIViewController {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         observeDelegate.send(value: "123")
+        
+        
     }
     
     override func viewDidLoad() {
