@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5308D496225206AC00171DFD /* WRCustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5308D494225206AC00171DFD /* WRCustomNavigationBar.swift */; };
+		5308D497225206AC00171DFD /* WRNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5308D495225206AC00171DFD /* WRNavigationBar.swift */; };
+		5308D49922520D6A00171DFD /* MessageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5308D49822520D6A00171DFD /* MessageDetailViewController.swift */; };
+		5308D49B22521FFF00171DFD /* CustomNavBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5308D49A22521FFF00171DFD /* CustomNavBarViewController.swift */; };
 		53835D542238CEE60094560D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53835D532238CEE60094560D /* AppDelegate.swift */; };
 		53835D5B2238CEE80094560D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53835D5A2238CEE80094560D /* Assets.xcassets */; };
 		53835D5E2238CEE80094560D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53835D5C2238CEE80094560D /* LaunchScreen.storyboard */; };
@@ -46,6 +50,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5308D494225206AC00171DFD /* WRCustomNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WRCustomNavigationBar.swift; sourceTree = "<group>"; };
+		5308D495225206AC00171DFD /* WRNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WRNavigationBar.swift; sourceTree = "<group>"; };
+		5308D49822520D6A00171DFD /* MessageDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDetailViewController.swift; sourceTree = "<group>"; };
+		5308D49A22521FFF00171DFD /* CustomNavBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavBarViewController.swift; sourceTree = "<group>"; };
 		53835D502238CEE60094560D /* RACSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RACSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53835D532238CEE60094560D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		53835D5A2238CEE80094560D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -102,6 +110,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5305278E224E4E4E00D94E9F /* ThirdLib */ = {
+			isa = PBXGroup;
+			children = (
+				530A5F69224F66E300F928A4 /* WRNavigationBar */,
+			);
+			path = ThirdLib;
+			sourceTree = "<group>";
+		};
+		530A5F69224F66E300F928A4 /* WRNavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				5308D495225206AC00171DFD /* WRNavigationBar.swift */,
+				5308D494225206AC00171DFD /* WRCustomNavigationBar.swift */,
+			);
+			path = WRNavigationBar;
+			sourceTree = "<group>";
+		};
 		53835D472238CEE60094560D = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				53835D532238CEE60094560D /* AppDelegate.swift */,
+				5305278E224E4E4E00D94E9F /* ThirdLib */,
 				53835D872238E1BD0094560D /* Base */,
 				53835D882238E1FA0094560D /* Class */,
 				53835D852238D8DE0094560D /* Supporting Files */,
@@ -173,6 +199,7 @@
 				53DD4880223F4C30004CCFB5 /* MainNavigationViewController.swift */,
 				53835D932238E7EA0094560D /* CYCustomTabBarButton.swift */,
 				53DD4884223F6FEC004CCFB5 /* BaseViewController.swift */,
+				5308D49A22521FFF00171DFD /* CustomNavBarViewController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -202,6 +229,7 @@
 			isa = PBXGroup;
 			children = (
 				53835D8F2238E2D70094560D /* MessageViewController.swift */,
+				5308D49822520D6A00171DFD /* MessageDetailViewController.swift */,
 			);
 			path = Message;
 			sourceTree = "<group>";
@@ -437,6 +465,7 @@
 			files = (
 				53835D542238CEE60094560D /* AppDelegate.swift in Sources */,
 				53835D822238D1890094560D /* HomeViewController.swift in Sources */,
+				5308D49922520D6A00171DFD /* MessageDetailViewController.swift in Sources */,
 				53DD4883223F6E2E004CCFB5 /* BaseNoticeConfig.swift in Sources */,
 				53835D8E2238E2CC0094560D /* AddressBookViewController.swift in Sources */,
 				53DD4889223F7B4F004CCFB5 /* AddressViewModel.swift in Sources */,
@@ -444,10 +473,13 @@
 				53DD4885223F6FEC004CCFB5 /* BaseViewController.swift in Sources */,
 				53835D842238D6470094560D /* MainTabBarController.swift in Sources */,
 				53DD4887223F709C004CCFB5 /* SomeConfigure.swift in Sources */,
+				5308D49B22521FFF00171DFD /* CustomNavBarViewController.swift in Sources */,
 				53DD4881223F4C30004CCFB5 /* MainNavigationViewController.swift in Sources */,
 				53835D972238EBEF0094560D /* PublishViewController.swift in Sources */,
 				53835D902238E2D70094560D /* MessageViewController.swift in Sources */,
 				53835D922238E2E10094560D /* MineViewController.swift in Sources */,
+				5308D496225206AC00171DFD /* WRCustomNavigationBar.swift in Sources */,
+				5308D497225206AC00171DFD /* WRNavigationBar.swift in Sources */,
 				53835D942238E7EA0094560D /* CYCustomTabBarButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

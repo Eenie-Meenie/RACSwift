@@ -12,8 +12,12 @@ class BaseViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        configureNavigationBar()
         // Do any additional setup after loading the view.
+    }
+    
+    func configureNavigationBar() {
+
     }
     
 }

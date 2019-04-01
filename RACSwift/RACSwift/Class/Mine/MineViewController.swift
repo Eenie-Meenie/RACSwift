@@ -13,7 +13,6 @@ class MineViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         createrSubViews()
-        configureNavigationBar()
         // Do any additional setup after loading the view.
     }
     
@@ -22,7 +21,7 @@ class MineViewController: BaseViewController {
         view.backgroundColor = UIColor.yellow
     }
     
-    func configureNavigationBar() {
+   override func configureNavigationBar() {
         navigationItem.title = "我的"
     }
 

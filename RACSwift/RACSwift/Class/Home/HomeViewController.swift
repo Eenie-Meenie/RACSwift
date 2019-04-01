@@ -20,14 +20,16 @@ class HomeViewController: BaseViewController {
         super.viewDidLoad()
         
         createrSubViews()
-        configureNavigationBar()
         // 创建热信号
         createrHotSignal()
         createrKVO()
         // 通知
         createrNotification()
-        
         someValue = 1
+    }
+    
+    override func configureNavigationBar() {
+        navigationItem.title = "首页"
     }
     
     // MARK - lazy load
@@ -55,7 +57,8 @@ class HomeViewController: BaseViewController {
         secondVC.signalDelegate.observeValues({ (value) in
             print("delegate: \(value)")
         })
-        self.navigationController?.pushViewController(secondVC, animated: true)
+    
+        navigationController?.pushViewController(secondVC, animated: true)
     }
 }
 
@@ -125,7 +128,5 @@ extension HomeViewController {
         }
     }
     
-    func configureNavigationBar() {
-        navigationItem.title = "首页"
-    }
+    
 }

@@ -36,7 +36,7 @@ class AddressBookViewController: BaseViewController {
         super.viewDidLoad()
         
         createrSubViews()
-        configureNavigationBar()
+       
         
         // KVO
         tableView.reactive.signal(forKeyPath: "contentOffset").observeValues { (contentOffset) in
@@ -95,7 +95,7 @@ class AddressBookViewController: BaseViewController {
         }
     }
     
-    func configureNavigationBar() {
+   override func configureNavigationBar() {
         navigationItem.title = "地址"
     }
 }

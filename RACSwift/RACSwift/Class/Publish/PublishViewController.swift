@@ -14,7 +14,6 @@ class PublishViewController: BaseViewController {
         super.viewDidLoad()
 
         createrSubViews()
-        configureNavigationBar()
     }
     
 
@@ -23,7 +22,7 @@ class PublishViewController: BaseViewController {
         view.backgroundColor = UIColor.purple
     }
     
-    func configureNavigationBar() {
+    override func configureNavigationBar() {
         navigationItem.title = "新闻"
     }
     /*

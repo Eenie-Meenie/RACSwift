@@ -19,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         window = UIWindow()
+        
 
         // 注册中间按钮
         CYCustomTabBarButton.register()
