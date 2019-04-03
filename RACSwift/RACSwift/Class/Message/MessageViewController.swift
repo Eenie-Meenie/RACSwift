@@ -64,6 +64,8 @@ class MessageViewController: CustomNavBarViewController {
             print("----\(str1) --- + ---\(str2)---")
         }
         
+        
+        
         DispatchQueue.global().asyncAfter(deadline: .now() + 2) {
             
             DispatchQueue.main.async {

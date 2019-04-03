@@ -31,6 +31,8 @@ class AddressViewModel: NSObject {
     
     /// 行数
     var rawCount:Int = 0
+    
+    let formattedHomeGoals = MutableProperty<String>("")
 }
 
 // MARK: - UITableViewDataSource,UITableViewDelegate

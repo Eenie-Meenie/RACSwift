@@ -54,9 +54,8 @@ class AddressBookViewController: BaseViewController {
         addressViewModel.sectionCount = 1
         addressViewModel.rawCount = rawCount
         addressViewModel.cellRowHeight = 60
- 
         
-
+//        addressViewModel.formattedHomeGoals <~ reactive.signal(forKeyPath: "rawCount").filterMap({ $0 })
 //        let name = MutableProperty(0)
 //        name.value = r
 //        name.value = addressViewModel.rawCount
@@ -86,12 +85,15 @@ class AddressBookViewController: BaseViewController {
         addressViewModel.cellSlect = { [weak self] indexPath,tableView in
             print("select: \(indexPath.row)")
             
-            guard let `strongSelf` = self else { return }
+            guard let strongSelf = self else { return }
             
 //            strongSelf.rawCount += 1
             strongSelf.addressViewModel.rawCount += 1
             
-            self?.tableView .reloadData()
+            strongSelf.tableView .reloadData()
+            
+            let index = IndexPath(row: strongSelf.rawCount, section: 0)
+            strongSelf.tableView.scrollToRow(at: index, at: UITableView.ScrollPosition.middle, animated: true)
         }
     }
     

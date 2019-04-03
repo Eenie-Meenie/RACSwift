@@ -20,7 +20,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow()
         
-
         // 注册中间按钮
         CYCustomTabBarButton.register()
         window?.rootViewController = MainTabBarController.createrMainTabVC()
