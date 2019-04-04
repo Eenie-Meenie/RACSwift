@@ -22,6 +22,12 @@ class AddressBookViewController: BaseViewController {
         return tableView
     }()
     
+    lazy var accountTextField: UITextField = {
+        let view = UITextField()
+        self.view.addSubview(view)
+        return view
+    }()
+    
     lazy var addressViewModel: AddressViewModel = {
         let addressViewModel = AddressViewModel()
         
@@ -54,6 +60,9 @@ class AddressBookViewController: BaseViewController {
         addressViewModel.sectionCount = 1
         addressViewModel.rawCount = rawCount
         addressViewModel.cellRowHeight = 60
+        
+//        BindingTarget(object: addressViewModel, keyPath: #keyPath(AddressViewModel.str)) <~ accountTextField.reactive.continuousTextValues
+        
         
 //        addressViewModel.formattedHomeGoals <~ reactive.signal(forKeyPath: "rawCount").filterMap({ $0 })
 //        let name = MutableProperty(0)
